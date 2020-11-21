@@ -1,0 +1,70 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "key",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "value",
+                "type": "string"
+            }
+        ],
+        "name": "addItem",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "key",
+                "type": "string"
+            }
+        ],
+        "name": "deleteItem",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "key",
+                "type": "string"
+            }
+        ],
+        "name": "getItem",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "key",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "value",
+                "type": "string"
+            }
+        ],
+        "name": "updateItem",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]
