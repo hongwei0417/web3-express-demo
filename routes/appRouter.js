@@ -1,12 +1,12 @@
 import express from "express";
 import { connect_to_web3 } from "../function/web3";
 import { getContractInstance, contract_call, contract_send } from "../function/contract";
-import APP_ABI_JSON from "../contracts/app.json";
-import {
-	add_item_to_mongodb,
-	update_item_from_mongodb,
-	delete_item_from_mongodb,
-} from "../function/db";
+//import APP_ABI_JSON from "../contracts/app.json";
+// import {
+// 	add_item_to_mongodb,
+// 	update_item_from_mongodb,
+// 	delete_item_from_mongodb,
+// } from "../function/db";
 
 //express 路由
 const router = express.Router();
