@@ -11,13 +11,17 @@ contract UserManagement {
         string _usermajor;      //使用者科系
     }
     //使用者註冊
-    function adduser(string memory _useraccount, string memory _username, string memory _userpassword, string memory _usergrade, string memory _usermajor) public{
+    function setuser(string memory _useraccount, string memory _username, string memory _userpassword, string memory _usergrade, string memory _usermajor) public{
         person[_useraccount] = (userinformation(_username, _userpassword, _usergrade, _usermajor));     
     }
     //觀看註冊是否成功
     function getuser(string memory _useraccount) public view returns(string memory, string memory, string memory, string memory, string memory){
         userinformation memory ui = person[_useraccount];
         return (ui._username, _useraccount, ui._userpassword, ui._usergrade, ui._usermajor);
+    }
+    
+    function userIsExist(string memory _useraccount) public view returns(bool) {
+        return bytes(person[_useraccount]._username).length != 0;
     }
     
     int a=0;//測試登入機制
